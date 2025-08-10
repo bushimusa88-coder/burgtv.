@@ -3,28 +3,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Burg IPTV — Coming Soon</title>
+  <title>Burg IPTV — Player IPTV semplice e veloce</title>
+  <meta name="description" content="Burg IPTV: carica la tua playlist M3U o collega il MAC. Prova gratuita di 7 giorni.">
   <link rel="icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Burg IPTV — La tua esperienza IPTV. Presto disponibile.">
-  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="wrap">
-    <div class="logo">
-      <div class="tv"><div class="antenna"></div></div>
-      <div class="wordmark">Burg <span>IPTV</span></div>
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <div class="logo-sq"><span></span></div>
+      <div class="word">Burg <strong>IPTV</strong></div>
     </div>
-    <h1>Stiamo arrivando</h1>
-    <p class="sub">Il nuovo player IPTV con gestione playlist e prova gratuita di 7 giorni.</p>
-    <div class="badge">burgtv.com</div>
-  </main>
-  <footer>
-    <small>© <span id="y"></span> Burg IPTV — Tutti i diritti riservati</small>
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    <nav class="links">
+      <a href="#features">Funzioni</a>
+      <a href="#devices">Dispositivi</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <h1>Il player IPTV <span>semplice</span> e <span>veloce</span></h1>
+      <p>Carica la tua playlist <strong>M3U</strong> o collega il <strong>MAC Address</strong> dal portale. Prova gratuita di 7 giorni.</p>
+      <div class="cta-row">
+        <a href="#" class="btn primary">Scarica per Fire TV</a>
+        <a href="#" class="btn ghost">Apri Portale</a>
+      </div>
+      <div class="trust">Senza liste incluse. Solo il player, punto.</div>
+    </div>
+    <div class="hero-art">
+      <div class="tv-card">
+        <div class="screen"></div>
+        <div class="glow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <h2>Funzioni principali</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Playlist M3U</h3>
+        <p>Incolla l'URL M3U e inizia subito a guardare. Supporto EPG e categorie.</p>
+      </div>
+      <div class="card">
+        <h3>Login via MAC</h3>
+        <p>Vedi il MAC sulla TV, collegalo dal sito e sincronizzi la playlist in un attimo.</p>
+      </div>
+      <div class="card">
+        <h3>Prova 7 giorni</h3>
+        <p>Accesso completo senza carta. Alla scadenza puoi attivare l’abbonamento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="devices" class="section alt">
+  <div class="container">
+    <h2>Compatibile con i tuoi dispositivi</h2>
+    <ul class="devices">
+      <li>Samsung Tizen</li>
+      <li>LG webOS</li>
+      <li>Fire TV / Firestick</li>
+      <li>Android TV</li>
+      <li>iOS / Android</li>
+      <li>Web App (browser)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container">
+    <h2>Domande frequenti</h2>
+    <div class="faq">
+      <details>
+        <summary>Fornite liste o contenuti?</summary>
+        <p>No. Burg IPTV è solo un <strong>player</strong>. Non forniamo nessuna lista o contenuto.</p>
+      </details>
+      <details>
+        <summary>È legale usare il player?</summary>
+        <p>Sì, l’uso del player è legale. L’utente è responsabile delle playlist che carica e deve avere i diritti per visualizzarle.</p>
+      </details>
+      <details>
+        <summary>Come funziona la prova gratuita?</summary>
+        <p>Puoi usare l’app per 7 giorni. Al termine, l’accesso scade finché non attivi l’abbonamento.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container foot-inner">
+    <div class="brand small">
+      <div class="logo-sq"><span></span></div>
+      <div class="word">Burg <strong>IPTV</strong></div>
+    </div>
+    <small>© <span id="y"></span> Burg IPTV — burgtv.com</small>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
