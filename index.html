@@ -4,16 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Burg IPTV — Player IPTV semplice e veloce</title>
-  <meta name="description" content="Carica la tua playlist M3U o collega il MAC. Prova gratuita di 7 giorni.">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <meta name="description" content="Burg IPTV: carica la tua playlist M3U o collega il MAC. Prova gratuita di 7 giorni.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="/" aria-label="Burg IPTV">
-      <img src="assets/logo-small.png?v=1" alt="Burg IPTV" class="brand-logo" height="44">
+    <a class="brand" href="/">
+      <img src="logo-icon.svg" class="brand-icon" aria-hidden="true" alt=""/>
+      <div class="brand-text"><span class="burg">Burg</span>&nbsp;<strong>IPTV</strong></div>
     </a>
     <nav class="links">
       <a href="#features">Funzioni</a>
@@ -35,7 +38,7 @@
       <div class="trust">Senza liste incluse. Solo il player, punto.</div>
     </div>
     <div class="hero-art">
-      <img src="assets/logo.png?v=1" alt="Burg IPTV" class="hero-logo">
+      <div class="tv-card"><div class="screen"></div><div class="glow"></div></div>
     </div>
   </div>
 </section>
@@ -74,8 +77,17 @@
 
 <footer class="footer">
   <div class="container foot-inner">
-    <small>© 2025 Burg IPTV — burgtv.com</small>
+    <a class="brand small" href="/">
+      <img src="logo-icon.svg" class="brand-icon small" aria-hidden="true" alt=""/>
+      <div class="brand-text small"><span class="burg">Burg</span>&nbsp;<strong>IPTV</strong></div>
+    </a>
+    <small>© <span id="y"></span> Burg IPTV — burgtv.com</small>
   </div>
 </footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  document.querySelectorAll('.btn.disabled').forEach(b=>b.addEventListener('click',e=>e.preventDefault()));
+</script>
 </body>
 </html>
