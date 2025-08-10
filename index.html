@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Burg IPTV — Player IPTV semplice e veloce</title>
   <meta name="description" content="Burg IPTV: carica la tua playlist M3U o collega il MAC. Prova gratuita di 7 giorni.">
-  <link rel="icon" href="favicon.png">
+  <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -15,8 +15,7 @@
 <header class="nav">
   <div class="container nav-inner">
     <a class="brand" href="/">
-      <div class="logo-sq"><span></span></div>
-      <div class="word">Burg <strong>IPTV</strong></div>
+      <img src="logo-dark.svg" alt="Burg IPTV" class="brandmark" width="200" height="32" />
     </a>
     <nav class="links">
       <a href="#features">Funzioni</a>
@@ -78,8 +77,7 @@
 <footer class="footer">
   <div class="container foot-inner">
     <a class="brand small" href="/">
-      <div class="logo-sq"><span></span></div>
-      <div class="word">Burg <strong>IPTV</strong></div>
+      <img src="logo-dark.svg" alt="Burg IPTV" class="brandmark" width="160" height="24" />
     </a>
     <small>© <span id="y"></span> Burg IPTV — burgtv.com</small>
   </div>
@@ -87,7 +85,6 @@
 
 <script>
   document.getElementById('y').textContent = new Date().getFullYear();
-  // prevent click on disabled button
   document.querySelectorAll('.btn.disabled').forEach(b=>b.addEventListener('click',e=>e.preventDefault()));
 </script>
 </body>
