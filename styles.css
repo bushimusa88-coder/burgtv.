@@ -7,7 +7,9 @@ h1,h2,h3{margin:0 0 12px}h1{font-size:44px;line-height:1.1}h2{font-size:28px}p{m
 .nav{position:sticky;top:0;background:rgba(10,10,20,.6);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
-.brandmark{display:block}
+.brand-icon{width:30px;height:30px}
+.brand-text{display:flex;align-items:baseline;font-size:18px}
+.brand-text .burg{font-family:"Pacifico",cursive;font-size:20px;margin-right:2px}
 .links a{color:#d9def7;text-decoration:none;margin-left:18px}.links a:hover{opacity:.8}
 .hero{background:radial-gradient(1200px 800px at 10% 10%, #2a1050 0%, #120c2c 60%, #0a0a14 100%), linear-gradient(135deg, var(--violet) 0%, var(--mag) 100%);background-blend-mode:overlay}
 .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:56px 0 72px}
@@ -27,4 +29,5 @@ h1,h2,h3{margin:0 0 12px}h1{font-size:44px;line-height:1.1}h2{font-size:28px}p{m
 .faq summary{cursor:pointer;font-weight:600}
 .footer{border-top:1px solid rgba(255,255,255,.06);padding:24px 0;background:#0e0e18}
 .foot-inner{display:flex;align-items:center;justify-content:space-between}
+.brand.small .brand-icon{width:22px;height:22px}.brand.small .brand-text{font-size:16px}
 @media (max-width:900px){.hero-inner{grid-template-columns:1fr;gap:12px}.grid-3{grid-template-columns:1fr}.devices{grid-template-columns:1fr 1fr}h1{font-size:34px}}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f00078"/>
+      <stop offset="1" stop-color="#8a2be2"/>
+    </linearGradient>
+  </defs>
+  <!-- TV body -->
+  <rect x="32" y="64" width="192" height="140" rx="26" fill="url(#g)"/>
+  <!-- Screen wave -->
+  <path d="M48 136 C 78 116, 108 156, 138 144 C 168 132, 196 160, 216 152 L 216 188 C 216 197, 209 204, 200 204 L 56 204 C 47 204, 40 197, 40 188 L 40 152 C 45 151, 50 144, 48 136 Z" fill="#ffffff22"/>
+  <!-- Antenna -->
+  <path d="M88 54 L112 70" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <path d="M168 54 L144 70" stroke="white" stroke-width="8" stroke-linecap="round"/>
+  <!-- Stand -->
+  <rect x="88" y="214" width="80" height="8" rx="4" fill="url(#g)"/>
+</svg>
