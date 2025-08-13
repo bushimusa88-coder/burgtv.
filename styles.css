@@ -37,15 +37,3 @@ h1,h2,h3{margin:0 0 12px}h1{font-size:44px;line-height:1.1}h2{font-size:28px}p{m
 .brand-icon{width:28px !important;height:28px !important;display:block;flex:0 0 28px}
 .brand.small .brand-icon{width:22px !important;height:22px !important}
 .nav{overflow:hidden}
-
-/* Logo grande nell'header */
-.brand-icon {
-  width: 48px;
-  height: 48px;
-}
-
-/* Logo un po' più grande anche nel footer */
-.brand-icon.small {
-  width: 36px;
-  height: 36px;
-}
