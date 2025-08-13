@@ -38,3 +38,8 @@ h1,h2,h3{margin:0 0 12px}h1{font-size:44px;line-height:1.1}h2{font-size:28px}p{m
     height: 80px !important;
     width: auto !important;
 }
+/* Logo ancora più grande nel menu */
+.nav .brand-icon {
+    height: 110px !important;
+    width: auto !important;
+}
