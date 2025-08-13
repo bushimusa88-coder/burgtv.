@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" aria-labelledby="title">
+  <title>Burg IPTV Logo</title>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f00078"/>
+      <stop offset="100%" stop-color="#8a2be2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <g transform="translate(10,18)" filter="url(#shadow)">
+    <rect x="0" y="22" rx="18" ry="18" width="150" height="110" fill="url(#g)" />
+    <path d="M15,42 h120 a8,8 0 0 1 8,8 v60 a8,8 0 0 1 -8,8 h-120 a8,8 0 0 1 -8,-8 v-60 a8,8 0 0 1 8,-8 z" fill="#0a0a14"/>
+    <path d="M15,95 C45,70 85,70 135,95" fill="#0a0a14"/>
+    <rect x="42" y="140" width="66" height="8" rx="4" fill="url(#g)"/>
+    <path d="M40,10 L72,34" stroke="url(#g)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M110,10 L78,34" stroke="url(#g)" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(180,30)">
+    <text x="0" y="45" font-family="Pacifico, 'Brush Script MT', cursive" font-size="56" fill="#ffffff">Burg</text>
+    <text x="0" y="115" font-family="Inter, Arial, Helvetica, sans-serif" font-weight="800" font-size="78" fill="#ffffff">IPTV</text>
+  </g>
+</svg>
