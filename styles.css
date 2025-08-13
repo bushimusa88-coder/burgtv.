@@ -198,3 +198,11 @@ h2 {
 .footer small {
   opacity: 0.7;
 }
+
+/* === Override: SOLO dimensione logo (preserva tutti i colori/stili) === */
+@media (min-width: 601px) {
+  .nav .brand-icon { height: 90px !important; width: auto !important; }
+}
+@media (max-width: 600px) {
+  .nav .brand-icon { height: 56px !important; width: auto !important; }
+}
