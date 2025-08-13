@@ -9,7 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Pacifico&display=swap" rel="stylesheet">
+  <!-- tuo styles.css esistente -->
   <link rel="stylesheet" href="styles.css?v=3">
+  <!-- aggiunte non invasive -->
+  <link rel="stylesheet" href="styles.extra.css?v=1">
+
+  <!-- assets -->
+  <link rel="preload" as="video" href="assets/hero-tv.mp4">
+  <script defer src="scripts.js?v=1"></script>
 </head>
 <body>
 <header class="nav">
@@ -18,33 +25,42 @@
       <img src="burgtv-logo-exact.png" class="brand-icon" width="60" height="60" aria-hidden="true" alt="Logo Burg IPTV"/>
     </a>
     <nav class="links">
-      <a href="#features">Funzioni</a>
-      <a href="#devices">Dispositivi</a>
-      <a href="#faq">FAQ</a>
+      <a href="#features" data-i18n="nav.features">Funzioni</a>
+      <a href="#devices"  data-i18n="nav.devices">Dispositivi</a>
+      <a href="#faq"      data-i18n="nav.faq">FAQ</a>
     </nav>
+    <div class="lang-switch">
+      <button data-lang="it" aria-pressed="true">IT</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+    </div>
   </div>
 </header>
 
 <section class="hero">
   <div class="container hero-inner">
-    <div class="hero-copy">
-      <h1>Il player IPTV <span>semplice</span> e <span>veloce</span></h1>
-      <p>Carica la tua playlist <strong>M3U</strong> o collega il <strong>MAC Address</strong> dal portale. <strong>Prova gratuita di 7 giorni</strong>.</p>
+    <div class="hero-copy reveal">
+      <h1 data-i18n="hero.title">Il player IPTV <span>semplice</span> e <span>veloce</span></h1>
+      <p data-i18n="hero.subtitle">Carica la tua playlist <strong>M3U</strong> o collega il <strong>MAC Address</strong> dal portale. <strong>Prova gratuita di 7 giorni</strong>.</p>
       <div class="cta-row">
-        <a href="https://app.burgtv.com" class="btn primary">Apri Portale</a>
-        <a href="#" class="btn ghost disabled" title="Disponibile a breve">Scarica per Fire TV (presto)</a>
+        <a href="https://app.burgtv.com" class="btn primary" data-i18n="cta.portal">Apri Portale</a>
+        <a href="#" class="btn ghost disabled" title="Disponibile a breve" data-i18n="cta.firetv">Scarica per Fire TV (presto)</a>
       </div>
-      <div class="trust">Senza liste incluse. Solo il player, punto.</div>
+      <div class="trust" data-i18n="hero.note">Senza liste incluse. Solo il player, punto.</div>
     </div>
-    <div class="hero-art">
-      <div class="tv-card"><div class="screen"></div><div class="glow"></div></div>
+    <div class="hero-art reveal">
+      <div class="tv-card">
+        <div class="screen">
+          <video src="assets/hero-tv.mp4" autoplay muted loop playsinline></video>
+        </div>
+        <div class="glow"></div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="features" class="section">
-  <div class="container">
-    <h2>Funzioni principali</h2>
+  <div class="container reveal">
+    <h2 data-i18n="features.title">Funzioni principali</h2>
     <div class="grid-3">
       <div class="card"><h3>Playlist M3U</h3><p>Incolla l'URL M3U e inizia subito a guardare. Supporto EPG e categorie.</p></div>
       <div class="card"><h3>Login via MAC</h3><p>Vedi il MAC sulla TV, collegalo dal sito e sincronizzi la playlist in un attimo.</p></div>
@@ -54,8 +70,8 @@
 </section>
 
 <section id="devices" class="section alt">
-  <div class="container">
-    <h2>Compatibile con i tuoi dispositivi</h2>
+  <div class="container reveal">
+    <h2 data-i18n="devices.title">Compatibile con i tuoi dispositivi</h2>
     <ul class="devices">
       <li>Samsung Tizen</li><li>LG webOS</li><li>Fire TV / Firestick</li>
       <li>Android TV</li><li>iOS / Android</li><li>Web App (browser)</li>
@@ -64,8 +80,8 @@
 </section>
 
 <section id="faq" class="section">
-  <div class="container">
-    <h2>Domande frequenti</h2>
+  <div class="container reveal">
+    <h2 data-i18n="faq.title">Domande frequenti</h2>
     <div class="faq">
       <details><summary>Fornite liste o contenuti?</summary><p>No. Burg IPTV è solo un <strong>player</strong>. Non forniamo nessuna lista o contenuto.</p></details>
       <details><summary>È legale usare il player?</summary><p>Sì, l'uso del player è legale. L'utente è responsabile delle playlist che carica e deve avere i diritti per visualizzarle.</p></details>
@@ -75,7 +91,7 @@
 </section>
 
 <footer class="footer">
-  <div class="container foot-inner">
+  <div class="container foot-inner reveal">
     <a class="brand small" href="/">
       <img src="burgtv-logo-exact.png" class="brand-icon small" width="40" height="40" aria-hidden="true" alt="Logo Burg IPTV"/>
     </a>

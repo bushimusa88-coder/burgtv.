@@ -1,22 +1,15 @@
-Burg IPTV — Brand Pack
-=========================
-
+BurgTV – Upgrade package
+-------------------------
 Contenuto:
-- logo.png          (grande, per header o hero)
-- logo-small.png    (ridotto, per navbar)
-- favicon.png       (512x512, per apple-touch-icon e manifest)
-- favicon.ico       (16..256, per tab/browser)
+- index.html  (con lang switch IT/EN, animazioni e TV con video)
+- styles.extra.css  (solo aggiunte/override; non cambia i tuoi colori di base)
+- scripts.js  (reveal on scroll + gestione lingue)
+- assets/hero-tv.mp4  (placeholder vuoto: sostituisci con un tuo video breve, senza audio)
 
-Istruzioni rapide (HTML standard):
-----------------------------------
-<head>
-  <link rel="icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/favicon.png">
-</head>
-
-Nel CSS/HTML usa il logo così:
-<img src="/assets/logo.png" alt="Burg IPTV" height="48">
-
-Suggerimenti:
-- Se la favicon non cambia, svuota la cache o prova una finestra anonima.
-- Mantieni i percorsi /favicon.ico e /favicon.png alla root del progetto.
+Uso:
+1) Carica TUTTI i file nella root della tua repo (dove c'è già styles.css).
+2) Mantieni il tuo styles.css esistente e aggiungi questo nuovo LINK nel tuo index.html:
+     <link rel="stylesheet" href="styles.extra.css?v=1">
+   (È già incluso nell'index.html di questo pacchetto.)
+3) Assicurati di avere il logo come 'burgtv-logo-exact.png' e la favicon 'favicon.ico' in root.
+4) Per cambiare lingua clicca IT/EN in navbar (persistenza in localStorage).
