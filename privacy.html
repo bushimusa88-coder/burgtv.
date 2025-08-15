@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BurgTV — Privacy / Privacy Policy</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0b0c;--text:#fff;--muted:#c9c9d1;--accent:#B94A8E;--accent2:#7B4397;--border:rgba(255,255,255,.12)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif;line-height:1.8}
+    .wrap{max-width:860px;margin:0 auto;padding:48px 20px}
+    h1{font-size:2.2rem;margin-bottom:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    h2{font-size:1.5rem;margin:28px 0 10px;color:#fff}
+    p,li{color:var(--muted)}
+    ul{margin:0 0 18px 22px}
+    .lang{display:flex;gap:8px;margin-bottom:20px}
+    .lang button{border:1px solid var(--border);background:transparent;color:var(--muted);padding:.35rem .6rem;border-radius:.5rem}
+    .lang button.active{border-color:var(--accent);color:#fff}
+    .card{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:12px;padding:22px;margin-top:20px}
+    a{color:#B94A8E;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.25)}
+    a:hover{color:#fff;border-bottom-color:#fff}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="lang">
+      <button id="p-it" class="active">IT</button>
+      <button id="p-en">EN</button>
+      <a href="/" style="margin-left:auto">← Home</a>
+    </div>
+    <div id="content-it" class="card">
+      <h1>Privacy Policy</h1>
+      <p style="margin:8px 0 18px">Ultimo aggiornamento: 15 Agosto 2025</p>
+      <h2>1. Dati che raccogliamo</h2>
+      <ul>
+        <li>Dati del dispositivo: MAC address o ID generato</li>
+        <li>Dati account: e‑mail se registrato</li>
+        <li>Dati d’uso: URL delle playlist M3U fornite dall’utente</li>
+        <li>Dati tecnici: log di accesso, tipo dispositivo, versione app</li>
+      </ul>
+      <h2>2. Come usiamo i dati</h2>
+      <ul>
+        <li>Fornire il servizio di player e sincronizzazione dispositivi</li>
+        <li>Gestire prova gratuita e attivazioni</li>
+        <li>Migliorare il servizio e risolvere problemi</li>
+      </ul>
+      <h2>3. Condivisione</h2>
+      <p>Non vendiamo i tuoi dati. Possiamo condividere con processori di pagamento e nei casi richiesti dalla legge.</p>
+      <h2>4. Sicurezza</h2>
+      <p>Tutte le comunicazioni avvengono su HTTPS. L’accesso ai dati è limitato e monitorato.</p>
+      <h2>5. I tuoi diritti</h2>
+      <ul>
+        <li>Accesso, rettifica e cancellazione</li>
+        <li>Opposizione o limitazione del trattamento</li>
+      </ul>
+      <h2>6. Contatti</h2>
+      <p>Per richieste privacy: <a href="mailto:help.burgtv@gmail.com">help.burgtv@gmail.com</a></p>
+    </div>
+
+    <div id="content-en" class="card" style="display:none">
+      <h1>Privacy Policy</h1>
+      <p style="margin:8px 0 18px">Last updated: August 15, 2025</p>
+      <h2>1. Data We Collect</h2>
+      <ul>
+        <li>Device data: MAC address or generated device ID</li>
+        <li>Account data: email (if registered)</li>
+        <li>Usage data: M3U playlist URLs provided by the user</li>
+        <li>Technical data: access logs, device type, app version</li>
+      </ul>
+      <h2>2. How We Use Data</h2>
+      <ul>
+        <li>Provide the player and device sync service</li>
+        <li>Manage free trial and activations</li>
+        <li>Improve the service and fix issues</li>
+      </ul>
+      <h2>3. Sharing</h2>
+      <p>We do not sell your data. We may share with payment processors and when required by law.</p>
+      <h2>4. Security</h2>
+      <p>All communications use HTTPS. Data access is limited and monitored.</p>
+      <h2>5. Your Rights</h2>
+      <ul>
+        <li>Access, rectify, and delete your data</li>
+        <li>Object to or restrict processing</li>
+      </ul>
+      <h2>6. Contact</h2>
+      <p>Privacy requests: <a href="mailto:help.burgtv@gmail.com">help.burgtv@gmail.com</a></p>
+    </div>
+  </div>
+
+  <script>
+    const it=document.getElementById('content-it');
+    const en=document.getElementById('content-en');
+    const btnIt=document.getElementById('p-it');
+    const btnEn=document.getElementById('p-en');
+    btnIt.onclick=()=>{it.style.display='block';en.style.display='none';btnIt.classList.add('active');btnEn.classList.remove('active');document.documentElement.lang='it';};
+    btnEn.onclick=()=>{it.style.display='none';en.style.display='block';btnEn.classList.add('active');btnIt.classList.remove('active');document.documentElement.lang='en';};
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BurgTV — Termini / Terms of Service</title>
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0b0c;--text:#fff;--muted:#c9c9d1;--accent:#B94A8E;--accent2:#7B4397;--border:rgba(255,255,255,.12)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif;line-height:1.8}
+    .wrap{max-width:860px;margin:0 auto;padding:48px 20px}
+    h1{font-size:2.2rem;margin-bottom:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    h2{font-size:1.5rem;margin:28px 0 10px;color:#fff}
+    p,li{color:var(--muted)}
+    ul{margin:0 0 18px 22px}
+    .lang{display:flex;gap:8px;margin-bottom:20px}
+    .lang button{border:1px solid var(--border);background:transparent;color:var(--muted);padding:.35rem .6rem;border-radius:.5rem}
+    .lang button.active{border-color:var(--accent);color:#fff}
+    .card{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:12px;padding:22px;margin-top:20px}
+    a{color:#B94A8E;text-decoration:none;border-bottom:1px dotted rgba(255,255,255,.25)}
+    a:hover{color:#fff;border-bottom-color:#fff}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="lang">
+      <button id="t-it" class="active">IT</button>
+      <button id="t-en">EN</button>
+      <a href="/" style="margin-left:auto">← Home</a>
+    </div>
+
+    <div id="content-it" class="card">
+      <h1>Termini di Servizio</h1>
+      <p style="margin:8px 0 18px">Ultimo aggiornamento: 15 Agosto 2025</p>
+      <h2>1. Servizio</h2>
+      <p>BurgTV è un <strong>player IPTV</strong>. Non forniamo contenuti, canali o playlist.</p>
+      <h2>2. Uso consentito</h2>
+      <ul>
+        <li>L’utente deve avere i diritti per visualizzare i contenuti delle proprie playlist.</li>
+        <li>È vietato usare il servizio per attività illegali o violare il copyright.</li>
+        <li>Possiamo sospendere gli account che violano i termini.</li>
+      </ul>
+      <h2>3. Prova e pagamenti</h2>
+      <ul>
+        <li>Prova gratuita 7 giorni; al termine si può attivare l’accesso Premium (€5.99 una tantum).</li>
+        <li>Nessun rimborso dopo l’attivazione.</li>
+      </ul>
+      <h2>4. Limitazioni</h2>
+      <ul>
+        <li>Nessuna garanzia di disponibilità continua.</li>
+        <li>Non siamo responsabili per contenuti di terze parti o perdita dati.</li>
+      </ul>
+      <h2>5. Contatti</h2>
+      <p>Assistenza: <a href="mailto:help.burgtv@gmail.com">help.burgtv@gmail.com</a></p>
+    </div>
+
+    <div id="content-en" class="card" style="display:none">
+      <h1>Terms of Service</h1>
+      <p style="margin:8px 0 18px">Last updated: August 15, 2025</p>
+      <h2>1. Service</h2>
+      <p>BurgTV is an <strong>IPTV player</strong>. We do not provide any content, channels, or playlists.</p>
+      <h2>2. Permitted Use</h2>
+      <ul>
+        <li>You must have legal rights to view the content in your playlists.</li>
+        <li>Do not use the service for illegal activity or to infringe copyright.</li>
+        <li>We may suspend accounts that violate these terms.</li>
+      </ul>
+      <h2>3. Trial & Payments</h2>
+      <ul>
+        <li>7‑day free trial; afterwards you may activate Premium access (€5.99 one‑time).</li>
+        <li>No refunds after activation.</li>
+      </ul>
+      <h2>4. Limitations</h2>
+      <ul>
+        <li>No guarantee of continuous availability.</li>
+        <li>Not responsible for third‑party content or data loss.</li>
+      </ul>
+      <h2>5. Contact</h2>
+      <p>Support: <a href="mailto:help.burgtv@gmail.com">help.burgtv@gmail.com</a></p>
+    </div>
+  </div>
+
+  <script>
+    const it=document.getElementById('content-it');
+    const en=document.getElementById('content-en');
+    const btnIt=document.getElementById('t-it');
+    const btnEn=document.getElementById('t-en');
+    btnIt.onclick=()=>{it.style.display='block';en.style.display='none';btnIt.classList.add('active');btnEn.classList.remove('active');document.documentElement.lang='it';};
+    btnEn.onclick=()=>{it.style.display='none';en.style.display='block';btnEn.classList.add('active');btnIt.classList.remove('active');document.documentElement.lang='en';};
+  </script>
+</body>
+</html>
