@@ -1,0 +1,29 @@
+PRIVACY POLICY - BurgTV (Italiano)
+
+Ultimo aggiornamento: 14 Dicembre 2024
+
+1. Informazioni che raccogliamo
+- Dati del dispositivo (ID univoco, MAC address, ecc.)
+- Dati account (email, se registrato)
+- Dati di utilizzo (playlist M3U, log di accesso, ecc.)
+
+2. Come utilizziamo i dati
+- Fornire il servizio IPTV
+- Sincronizzare playlist
+- Gestire prova e abbonamenti
+- Migliorare il servizio
+
+3. Condivisione dei dati
+- Solo con processori di pagamento (Stripe) o se richiesto per legge
+
+4. Sicurezza
+- HTTPS, accesso limitato, monitoraggio regolare
+
+5. Diritti dell'utente
+- Accesso, rettifica, cancellazione, opposizione
+
+6. Cookie
+- Per login, preferenze, prestazioni
+
+7. Contatti
+help.burgtv@gmail.com
