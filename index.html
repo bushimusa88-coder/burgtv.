@@ -96,5 +96,44 @@
   const setLang=(lang)=>{document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.getAttribute("data-i18n");if(dict[lang]&&dict[lang][key])el.innerHTML=dict[lang][key];});document.getElementById('btn-it').classList.toggle('active',lang==='it');document.getElementById('btn-en').classList.toggle('active',lang==='en');document.documentElement.lang=lang;};
   document.getElementById('btn-it').onclick=()=>setLang('it');document.getElementById('btn-en').onclick=()=>setLang('en');
 </script>
+<footer class="footer">
+  <div class="container foot-inner">
+    <a class="brand small" href="#">
+      <img src="assets/branding/logo-clean.svg" class="brand-icon small" width="120" height="40">
+    </a>
+    <small>© <span id="y"></span> Burg IPTV - burgtv.com</small>
+    <div style="margin-top:10px; font-size:14px;">
+      <a href="/terms.html">🇮🇹 Termini di Servizio</a> |
+      <a href="/privacy.html">🇮🇹 Privacy Policy</a> |
+      <a href="/terms-en.html">🇬🇧 Terms of Service</a> |
+      <a href="/privacy-en.html">🇬🇧 Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+const dict_it = {
+  "nav.features": "Funzioni",
+  "nav.devices": "Dispositivi",
+  "nav.faq": "FAQ"
+};
+const dict_en = {
+  "nav.features": "Features",
+  "nav.devices": "Devices",
+  "nav.faq": "FAQ"
+};
+const setLang = (lang) => {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (lang === 'it' && dict_it[key]) el.textContent = dict_it[key];
+    if (lang === 'en' && dict_en[key]) el.textContent = dict_en[key];
+  });
+};
+document.getElementById('btn-it').onclick = () => setLang('it');
+document.getElementById('btn-en').onclick = () => setLang('en');
+</script>
+</body>
+</html>
 </body>
 </html>
